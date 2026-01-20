@@ -26,11 +26,11 @@ export function Footer() {
               <span className="text-xl font-bold">{config.name}</span>
             </Link>
             <p className="text-sm text-muted-foreground">
-              Professional flight training in Cincinnati, Ohio from an experienced Certified Flight Instructor.
+              Cincinnati flight school with FAA certified flight instructor (CFI). Professional flight training and flight lessons in Greater Cincinnati, Ohio.
             </p>
           </div>
           <div>
-            <h3 className="mb-4 text-sm font-semibold">Flight Training</h3>
+            <h3 className="mb-4 text-sm font-semibold">Flight School Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/articles/how-to-get-a-pilots-license" className="text-muted-foreground hover:text-primary">
@@ -39,51 +39,51 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/articles/flight-training-cost-breakdown" className="text-muted-foreground hover:text-primary">
-                  Flight Training Costs
+                  Flight Training School Costs
                 </Link>
               </li>
               <li>
                 <Link href="/articles/cincinnati-flight-training-guide" className="text-muted-foreground hover:text-primary">
-                  Cincinnati Flight Training
+                  Cincinnati Flight Training Guide
                 </Link>
               </li>
               <li>
                 <Link href="/articles/what-to-expect-first-flying-lesson" className="text-muted-foreground hover:text-primary">
-                  Your First Flying Lesson
+                  First Flight Lesson with CFI
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="mb-4 text-sm font-semibold">Training Programs</h3>
+            <h3 className="mb-4 text-sm font-semibold">Flight School Training</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/#contact" className="text-muted-foreground hover:text-primary">
-                  Private Pilot License
+                  Private Pilot Flight Training
                 </Link>
               </li>
               <li>
                 <Link href="/#contact" className="text-muted-foreground hover:text-primary">
-                  Instrument Rating
+                  Instrument Rating Course
                 </Link>
               </li>
               <li>
                 <Link href="/#contact" className="text-muted-foreground hover:text-primary">
-                  Commercial Pilot License
+                  Commercial Pilot Training
                 </Link>
               </li>
               <li>
                 <Link href="/#contact" className="text-muted-foreground hover:text-primary">
-                  Discovery Flights
+                  Discovery Flight Experience
                 </Link>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="mb-4 text-sm font-semibold">Location</h3>
+            <h3 className="mb-4 text-sm font-semibold">Flight School Location</h3>
             <p className="text-sm text-muted-foreground">{config.region}</p>
             <p className="text-sm text-muted-foreground mt-2">
-              Contact me to discuss training locations and scheduling.
+              Contact your certified flight instructor to discuss training at local Cincinnati flight schools.
             </p>
           </div>
         </div>

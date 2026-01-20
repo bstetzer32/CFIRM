@@ -27,7 +27,7 @@ export function Header() {
         </Link>
         
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-1">
+        <nav className="hidden md:flex items-center space-x-1" aria-label="Flight school navigation">
           <Link
             href="/"
             className="text-sm font-medium px-4 py-2 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/10"
@@ -38,13 +38,13 @@ export function Header() {
             href="/articles"
             className="text-sm font-medium px-4 py-2 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/10"
           >
-            Resources
+            Flight Training
           </Link>
           <Link
             href="/#contact"
             className="text-sm font-medium px-4 py-2 rounded-lg bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-sm hover:shadow-md"
           >
-            Contact
+            Contact CFI
           </Link>
         </nav>
 

@@ -47,7 +47,7 @@ export function MobileNav() {
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-between px-4 py-4 text-lg font-medium rounded-xl transition-colors hover:bg-primary/10 hover:text-primary active:bg-primary/20"
               >
-                Home
+                Flight School Home
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-5 w-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
@@ -57,7 +57,7 @@ export function MobileNav() {
                 onClick={() => setIsOpen(false)}
                 className="flex items-center justify-between px-4 py-4 text-lg font-medium rounded-xl transition-colors hover:bg-primary/10 hover:text-primary active:bg-primary/20"
               >
-                Resources
+                Flight Training Resources
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="h-5 w-5">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                 </svg>
@@ -68,7 +68,7 @@ export function MobileNav() {
                   onClick={() => setIsOpen(false)}
                   className="flex items-center justify-center w-full px-6 py-4 text-lg font-medium rounded-xl bg-primary text-primary-foreground hover:bg-primary/90 active:bg-primary/80 transition-colors shadow-lg"
                 >
-                  Contact Me
+                  Contact Your CFI
                 </Link>
               </div>
             </div>

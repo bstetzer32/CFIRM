@@ -29,21 +29,20 @@ export default function Home() {
           <div className="grid gap-8 md:gap-12 md:grid-cols-2 md:items-center">
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-3xl sm:text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
-                Professional
-                <span className="text-primary"> Flight Training</span>
-                <br />In Cincinnati, OH
+                Cincinnati
+                <span className="text-primary"> Flight School</span>
+                <br />& CFI Training
               </h1>
               <p className="text-base sm:text-lg text-muted-foreground md:text-xl leading-relaxed">
-                Ready to <Link href="/articles/how-to-get-a-pilots-license" className="text-foreground hover:text-primary transition-colors">earn your pilot&apos;s license</Link>? I&apos;m Connor McNulty, a <Link href="/articles/choosing-a-flight-instructor" className="text-foreground hover:text-primary transition-colors">Certified Flight Instructor</Link>{" "}
-                offering personalized <Link href="/articles/cincinnati-flight-training-guide" className="text-foreground hover:text-primary transition-colors">flight training in Cincinnati</Link>. From your{" "}
-                <Link href="/articles/discovery-flight-guide" className="text-foreground hover:text-primary transition-colors">first discovery flight</Link> to <Link href="/articles/instrument-rating-guide" className="text-foreground hover:text-primary transition-colors">advanced ratings</Link>, I&apos;ll help you achieve your aviation goals.
+                Looking for a <Link href="/articles/choosing-a-flight-instructor" className="text-foreground hover:text-primary transition-colors">certified flight instructor</Link> in Cincinnati? I&apos;m Connor McNulty, an FAA-certified CFI offering personalized flight school instruction. Whether you want to <Link href="/articles/how-to-get-a-pilots-license" className="text-foreground hover:text-primary transition-colors">earn your pilot&apos;s license</Link>, complete <Link href="/articles/cincinnati-flight-training-guide" className="text-foreground hover:text-primary transition-colors">flight training in Cincinnati</Link>, or book a{" "}
+                <Link href="/articles/discovery-flight-guide" className="text-foreground hover:text-primary transition-colors">discovery flight</Link>, my flight school program will help you reach your <Link href="/articles/instrument-rating-guide" className="text-foreground hover:text-primary transition-colors">aviation goals</Link>.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 pt-2">
                 <Button size="lg" asChild className="w-full sm:w-auto text-base py-6 sm:py-4">
-                  <Link href="#contact">Schedule a Lesson</Link>
+                  <Link href="#contact">Book Flight Lesson</Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="w-full sm:w-auto text-base py-6 sm:py-4">
-                  <Link href="/articles">Flight Training Guide</Link>
+                  <Link href="/articles">Flight School Guide</Link>
                 </Button>
               </div>
             </div>
@@ -51,9 +50,9 @@ export default function Home() {
               <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-tr from-primary/30 to-accent/20 blur-3xl animate-pulse" />
               <Card className="border-primary/20 shadow-xl shadow-primary/10 backdrop-blur-sm bg-card/95">
                 <CardHeader className="text-center px-4 sm:px-6">
-                  <CardTitle className="text-xl sm:text-2xl">Start Your Flight Training</CardTitle>
+                  <CardTitle className="text-xl sm:text-2xl">Contact Your CFI</CardTitle>
                   <CardDescription className="text-sm sm:text-base">
-                    Contact me to discuss your goals and schedule your first lesson.
+                    Connect with a certified flight instructor to discuss your flight school goals.
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="px-4 sm:px-6">
@@ -70,10 +69,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8 sm:mb-12">
             <h2 className="text-2xl sm:text-3xl font-bold tracking-tight md:text-4xl">
-              Flight Training Services
+              Flight School Programs
             </h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg text-muted-foreground">
-              Comprehensive training programs tailored to your aviation goals.
+              Comprehensive flight training programs from your certified flight instructor, tailored to your aviation goals.
             </p>
           </div>
           <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
@@ -108,8 +107,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle className="group-hover:text-primary transition-colors duration-300"><Link href="/articles/instrument-rating-guide">Instrument Rating</Link></CardTitle>
                 <CardDescription>
-                  Expand your capabilities with <Link href="/articles/instrument-rating-guide" className="hover:text-primary transition-colors">instrument training</Link>. Fly safely in 
-                  clouds and low visibility conditions with confidence.
+                  Your certified flight instructor will expand your capabilities with <Link href="/articles/instrument-rating-guide" className="hover:text-primary transition-colors">instrument flight training</Link>. Learn to fly safely in clouds and low visibility conditions at our flight school.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -126,8 +124,7 @@ export default function Home() {
               <CardHeader>
                 <CardTitle className="group-hover:text-primary transition-colors duration-300"><Link href="/articles/commercial-pilot-license-guide">Commercial Pilot License</Link></CardTitle>
                 <CardDescription>
-                  Turn your passion into a <Link href="/articles/commercial-pilot-license-guide" className="hover:text-primary transition-colors">career in aviation</Link>. Commercial training prepares you 
-                  to fly professionally and opens doors to aviation careers.
+                  Turn your passion into a <Link href="/articles/commercial-pilot-license-guide" className="hover:text-primary transition-colors">career in aviation</Link>. Our flight school&apos;s commercial pilot training prepares you to fly professionally with CFI guidance.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -143,8 +140,8 @@ export default function Home() {
                 </div>
                 <CardTitle className="text-lg group-hover:text-primary transition-colors duration-300"><Link href="/articles/discovery-flight-guide">Discovery Flights</Link></CardTitle>
                 <CardDescription>
-                  Not sure if flying is for you? Experience the thrill of flight with an{" "}
-                  <Link href="/articles/what-to-expect-first-flying-lesson" className="hover:text-primary transition-colors">introductory lesson</Link>. You&apos;ll fly the aircraft yourself!
+                  Not sure if flight school is for you? Experience the thrill of flight with your certified flight instructor in an{" "}
+                  <Link href="/articles/what-to-expect-first-flying-lesson" className="hover:text-primary transition-colors">introductory flight lesson</Link>. You&apos;ll fly the aircraft yourself!
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -156,9 +153,9 @@ export default function Home() {
                     <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
                   </svg>
                 </div>
-                <CardTitle className="text-lg group-hover:text-primary transition-colors duration-300"><Link href="/articles/biennial-flight-review-guide">Flight Reviews</Link></CardTitle>
+                <CardTitle className="text-lg group-hover:text-primary transition-colors duration-300"><Link href="/articles/biennial-flight-review-guide">Flight Reviews (BFR)</Link></CardTitle>
                 <CardDescription>
-                  Stay current with <Link href="/articles/biennial-flight-review-guide" className="hover:text-primary transition-colors">biennial flight reviews</Link> and <Link href="/articles/instrument-rating-guide" className="hover:text-primary transition-colors">instrument proficiency checks</Link>. Refresh your skills and maintain your privileges.
+                  Stay current with your CFI through <Link href="/articles/biennial-flight-review-guide" className="hover:text-primary transition-colors">biennial flight reviews</Link> and <Link href="/articles/instrument-rating-guide" className="hover:text-primary transition-colors">instrument proficiency checks</Link>. Our flight school keeps you flying safely.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -169,9 +166,9 @@ export default function Home() {
                     <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
                   </svg>
                 </div>
-                <CardTitle className="text-lg group-hover:text-primary transition-colors duration-300">Tailored Training</CardTitle>
+                <CardTitle className="text-lg group-hover:text-primary transition-colors duration-300">Custom Flight Training</CardTitle>
                 <CardDescription>
-                  Need specialized training? <Link href="/articles/night-flying-training" className="hover:text-primary transition-colors">Night flying</Link>, complex/high-performance endorsements, or <Link href="/articles/cross-country-flight-training" className="hover:text-primary transition-colors">cross-country training</Link> available.
+                  Need specialized flight school instruction? Your CFI offers <Link href="/articles/night-flying-training" className="hover:text-primary transition-colors">night flying</Link>, complex/high-performance endorsements, or <Link href="/articles/cross-country-flight-training" className="hover:text-primary transition-colors">cross-country flight training</Link>.
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -185,7 +182,7 @@ export default function Home() {
           <div className="grid gap-12 md:grid-cols-2 md:items-center">
             <div>
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-                Why Train With Me?
+                Why Choose This Flight School?
               </h2>
               <ul className="mt-8 space-y-4">
                 <li className="flex items-start gap-3">
@@ -193,8 +190,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <div>
-                    <strong className="font-semibold">Experienced &amp; Certified</strong>
-                    <p className="text-muted-foreground">FAA <Link href="/articles/choosing-a-flight-instructor" className="hover:text-primary transition-colors">Certified Flight Instructor</Link> with a proven track record helping students <Link href="/articles/checkride-preparation-guide" className="hover:text-primary transition-colors">pass their checkrides</Link>.</p>
+                    <strong className="font-semibold">FAA Certified Flight Instructor</strong>
+                    <p className="text-muted-foreground">Your CFI is FAA-certified with a proven track record helping flight school students <Link href="/articles/checkride-preparation-guide" className="hover:text-primary transition-colors">pass their checkrides</Link>.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -202,8 +199,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <div>
-                    <strong className="font-semibold">Personalized Instruction</strong>
-                    <p className="text-muted-foreground">One-on-one training tailored to your learning style—whether you prefer <Link href="/articles/ground-school-guide" className="hover:text-primary transition-colors">ground school</Link> focus or hands-on flying.</p>
+                    <strong className="font-semibold">Personalized Flight School Instruction</strong>
+                    <p className="text-muted-foreground">One-on-one CFI training tailored to your learning style—whether you prefer <Link href="/articles/ground-school-guide" className="hover:text-primary transition-colors">ground school</Link> focus or hands-on flight lessons.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -211,8 +208,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <div>
-                    <strong className="font-semibold">Flexible Scheduling</strong>
-                    <p className="text-muted-foreground">Morning, evening, and weekend availability including <Link href="/articles/night-flying-training" className="hover:text-primary transition-colors">night flying</Link> to fit your busy life.</p>
+                    <strong className="font-semibold">Flexible Flight Lesson Scheduling</strong>
+                    <p className="text-muted-foreground">Morning, evening, and weekend flight training availability including <Link href="/articles/night-flying-training" className="hover:text-primary transition-colors">night flying instruction</Link> to fit your busy life.</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -220,8 +217,8 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
                   <div>
-                    <strong className="font-semibold">Safety First Approach</strong>
-                    <p className="text-muted-foreground">Emphasis on <Link href="/articles/aviation-weather-basics" className="hover:text-primary transition-colors">weather awareness</Link> and sound aeronautical decision-making from day one.</p>
+                    <strong className="font-semibold">Safety-Focused Flight Training</strong>
+                    <p className="text-muted-foreground">Our flight school emphasizes <Link href="/articles/aviation-weather-basics" className="hover:text-primary transition-colors">weather awareness</Link> and sound aeronautical decision-making from your first lesson.</p>
                   </div>
                 </li>
               </ul>
@@ -239,15 +236,15 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-4">
                 <Card className="text-center p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border-border/50 hover:border-primary/30 bg-gradient-to-br from-card to-primary/5">
                   <div className="text-4xl font-bold text-primary">40-60</div>
-                  <div className="text-sm text-muted-foreground mt-1">Hours to Private Pilot</div>
+                  <div className="text-sm text-muted-foreground mt-1">Flight Hours to PPL</div>
                 </Card>
                 <Card className="text-center p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border-border/50 hover:border-primary/30 bg-gradient-to-br from-card to-primary/5">
                   <div className="text-4xl font-bold text-primary">95%</div>
-                  <div className="text-sm text-muted-foreground mt-1">First-Time Pass Rate</div>
+                  <div className="text-sm text-muted-foreground mt-1">Checkride Pass Rate</div>
                 </Card>
                 <Card className="text-center p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border-border/50 hover:border-primary/30 bg-gradient-to-br from-card to-primary/5">
                   <div className="text-4xl font-bold text-primary">7 Days</div>
-                  <div className="text-sm text-muted-foreground mt-1">Weekly Availability</div>
+                  <div className="text-sm text-muted-foreground mt-1">CFI Availability</div>
                 </Card>
                 <Card className="text-center p-6 transition-all duration-300 hover:shadow-lg hover:-translate-y-1 border-border/50 hover:border-primary/30 bg-gradient-to-br from-card to-primary/5">
                   <div className="text-4xl font-bold text-primary">5★</div>
@@ -265,10 +262,10 @@ export default function Home() {
           <div className="flex items-center justify-between mb-12">
             <div>
               <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-                Flight Training Resources
+                Flight School Resources
               </h2>
               <p className="mt-4 text-lg text-muted-foreground">
-                Helpful guides covering <Link href="/articles/how-to-get-a-pilots-license" className="hover:text-primary transition-colors">how to get your pilot license</Link>, <Link href="/articles/flight-training-cost-breakdown" className="hover:text-primary transition-colors">training costs</Link>, and more.
+                Helpful CFI guides covering <Link href="/articles/how-to-get-a-pilots-license" className="hover:text-primary transition-colors">how to get your pilot license</Link>, <Link href="/articles/flight-training-cost-breakdown" className="hover:text-primary transition-colors">flight school costs</Link>, <Link href="/articles/checkride-preparation-guide" className="hover:text-primary transition-colors">checkride preparation</Link>, and more.
               </p>
             </div>
             <Button variant="outline" asChild>
@@ -288,19 +285,19 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl text-center mb-12">
-              Frequently Asked Questions
+              Flight School FAQs
             </h2>
             <div className="space-y-4">
               <Card className="transition-all duration-300 hover:shadow-lg border-border/50 hover:border-primary/30 group">
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-3">
                     <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm font-bold group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">?</span>
-                    <Link href="/articles/flight-training-cost-breakdown">How much does it cost to get a pilot&apos;s license?</Link>
+                    <Link href="/articles/flight-training-cost-breakdown">How much does flight school cost?</Link>
                   </CardTitle>
                   <CardDescription className="text-base pl-11">
-                    The <Link href="/articles/flight-training-cost-breakdown" className="hover:text-primary transition-colors">total cost for a Private Pilot License</Link> typically ranges from $10,000 to $15,000, 
-                    depending on how quickly you progress. This includes <Link href="/articles/flying-club-benefits" className="hover:text-primary transition-colors">aircraft rental</Link>, instruction, 
-                    <Link href="/articles/ground-school-guide" className="hover:text-primary transition-colors">ground school</Link>, and <Link href="/articles/checkride-preparation-guide" className="hover:text-primary transition-colors">examination fees</Link>. I&apos;ll provide a detailed cost estimate during 
+                    The <Link href="/articles/flight-training-cost-breakdown" className="hover:text-primary transition-colors">total flight school cost for a Private Pilot License</Link> typically ranges from $10,000 to $15,000, 
+                    depending on how quickly you progress. This includes <Link href="/articles/flying-club-benefits" className="hover:text-primary transition-colors">aircraft rental</Link>, certified flight instructor fees, 
+                    <Link href="/articles/ground-school-guide" className="hover:text-primary transition-colors">ground school</Link>, and <Link href="/articles/checkride-preparation-guide" className="hover:text-primary transition-colors">checkride fees</Link>. Your CFI will provide a detailed cost estimate during 
                     our initial consultation.
                   </CardDescription>
                 </CardHeader>
@@ -309,12 +306,12 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-3">
                     <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm font-bold group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">?</span>
-                    <Link href="/articles/how-to-get-a-pilots-license">How long does it take to get a pilot&apos;s license?</Link>
+                    <Link href="/articles/how-to-get-a-pilots-license">How long does flight school take?</Link>
                   </CardTitle>
                   <CardDescription className="text-base pl-11">
-                    Most students complete their <Link href="/articles/private-pilot-license-requirements" className="hover:text-primary transition-colors">Private Pilot License</Link> in 3-6 months, flying 2-3 times 
-                    per week. The <Link href="/articles/private-pilot-license-requirements" className="hover:text-primary transition-colors">FAA requires a minimum of 40 hours</Link>, but the national average is 
-                    60-70 hours. Flying more frequently helps you progress faster toward your <Link href="/articles/solo-flight-guide" className="hover:text-primary transition-colors">first solo</Link>.
+                    Most flight school students complete their <Link href="/articles/private-pilot-license-requirements" className="hover:text-primary transition-colors">Private Pilot License</Link> in 3-6 months with a certified flight instructor, flying 2-3 times 
+                    per week. The <Link href="/articles/private-pilot-license-requirements" className="hover:text-primary transition-colors">FAA requires a minimum of 40 flight hours</Link>, but the national average is 
+                    60-70 hours. Flying more frequently with your CFI helps you progress faster toward your <Link href="/articles/solo-flight-guide" className="hover:text-primary transition-colors">first solo flight</Link>.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -322,12 +319,12 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-3">
                     <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm font-bold group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">?</span>
-                    What do I need to start flight training?
+                    What do I need to start flight school?
                   </CardTitle>
                   <CardDescription className="text-base pl-11">
-                    To begin, you just need to be motivated to learn! You&apos;ll need to obtain a{" "}
+                    To begin flight training, you just need to be motivated to learn! You&apos;ll need to obtain a{" "}
                     <Link href="/articles/student-pilot-certificate" className="text-foreground hover:text-primary transition-colors">Student Pilot Certificate</Link> and{" "}
-                    <Link href="/articles/medical-certificate-requirements" className="text-foreground hover:text-primary transition-colors">medical certificate</Link>, which I&apos;ll help you with. 
+                    <Link href="/articles/medical-certificate-requirements" className="text-foreground hover:text-primary transition-colors">FAA medical certificate</Link>, which your certified flight instructor will help you with. 
                     There are no prerequisites—we&apos;ll start from the very beginning with{" "}
                     <Link href="/articles/ground-school-guide" className="text-foreground hover:text-primary transition-colors">ground school fundamentals</Link>.
                   </CardDescription>
@@ -337,13 +334,13 @@ export default function Home() {
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center gap-3">
                     <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-primary/10 text-primary text-sm font-bold group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">?</span>
-                    Can I try flying before committing to full training?
+                    Can I try a flight lesson before committing to flight school?
                   </CardTitle>
                   <CardDescription className="text-base pl-11">
-                    Absolutely! I offer{" "}
-                    <Link href="/articles/discovery-flight-experience" className="text-foreground hover:text-primary transition-colors">discovery flights</Link> that let you experience flying firsthand. 
-                    You&apos;ll actually fly the aircraft with my guidance. It&apos;s a great way to see 
-                    if <Link href="/articles/flight-training-costs" className="text-foreground hover:text-primary transition-colors">flight training</Link> is right for you before making a larger commitment.
+                    Absolutely! Our flight school offers{" "}
+                    <Link href="/articles/discovery-flight-experience" className="text-foreground hover:text-primary transition-colors">discovery flights</Link> that let you experience flying firsthand with a certified flight instructor. 
+                    You&apos;ll actually fly the aircraft with CFI guidance. It&apos;s a great way to see 
+                    if <Link href="/articles/flight-training-costs" className="text-foreground hover:text-primary transition-colors">flight training</Link> is right for you before committing to full flight school.
                   </CardDescription>
                 </CardHeader>
               </Card>
@@ -357,17 +354,17 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
-              Ready to Start Flying?
+              Ready to Start Flight School?
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Contact me today to schedule your{" "}
+              Contact your certified flight instructor today to schedule a{" "}
               <Link href="/articles/discovery-flight-experience" className="text-foreground hover:text-primary transition-colors">discovery flight</Link> or discuss your{" "}
               <Link href="/articles/aviation-career-paths" className="text-foreground hover:text-primary transition-colors">aviation career goals</Link>. 
               Whether you&apos;re pursuing a{" "}
               <Link href="/articles/private-pilot-license-requirements" className="text-foreground hover:text-primary transition-colors">private pilot license</Link>,{" "}
               <Link href="/articles/instrument-rating-guide" className="text-foreground hover:text-primary transition-colors">instrument rating</Link>, or{" "}
-              <Link href="/articles/commercial-pilot-license-guide" className="text-foreground hover:text-primary transition-colors">commercial certificate</Link>, 
-              I look forward to helping you achieve your dream of becoming a pilot.
+              <Link href="/articles/commercial-pilot-license-guide" className="text-foreground hover:text-primary transition-colors">commercial pilot certificate</Link>, 
+              this flight school will help you achieve your dream of becoming a pilot.
             </p>
             <div className="mt-8 mx-auto max-w-md relative">
               <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-tr from-primary/20 to-accent/10 blur-2xl" />

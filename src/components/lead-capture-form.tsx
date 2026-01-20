@@ -56,8 +56,8 @@ export function LeadCaptureForm() {
         throw new Error("Failed to submit");
       }
 
-      toast.success("Thank you! I'll be in touch soon to discuss your training.");
-      form.reset();
+              toast.success("Thank you! Your certified flight instructor will be in touch soon to discuss your flight training.");
+              form.reset();
     } catch {
       toast.error("Something went wrong. Please try again.");
     } finally {
@@ -131,21 +131,21 @@ export function LeadCaptureForm() {
           name="trainingGoal"
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-sm sm:text-base">Training Goal</FormLabel>
+              <FormLabel className="text-sm sm:text-base">Flight Training Goal</FormLabel>
               <FormControl>
                 <select
                   className="flex h-12 sm:h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base sm:text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   {...field}
                 >
-                  <option value="">Select your goal...</option>
-                  <option value="discovery">Discovery Flight</option>
-                  <option value="private">Private Pilot License</option>
-                  <option value="instrument">Instrument Rating</option>
-                  <option value="commercial">Commercial Pilot License</option>
-                  <option value="multi">Multi-Engine Rating</option>
-                  <option value="cfi">Flight Instructor (CFI)</option>
-                  <option value="bfr">Flight Review / BFR</option>
-                  <option value="other">Other</option>
+                  <option value="">Select your flight school goal...</option>
+                  <option value="discovery">Discovery Flight Experience</option>
+                  <option value="private">Private Pilot Training</option>
+                  <option value="instrument">Instrument Rating Course</option>
+                  <option value="commercial">Commercial Pilot Training</option>
+                  <option value="multi">Multi-Engine Flight Training</option>
+                  <option value="cfi">Certified Flight Instructor (CFI)</option>
+                  <option value="bfr">Flight Review with CFI</option>
+                  <option value="other">Other Flight Training</option>
                 </select>
               </FormControl>
               <FormMessage />
@@ -160,7 +160,7 @@ export function LeadCaptureForm() {
               <FormLabel className="text-sm sm:text-base">Message (Optional)</FormLabel>
               <FormControl>
                 <Textarea
-                  placeholder="Any flying experience? Questions about training?"
+                  placeholder="Any flying experience? Questions about flight school or training with a CFI?"
                   className="resize-none min-h-[100px] text-base sm:text-sm"
                   {...field}
                 />
@@ -170,7 +170,7 @@ export function LeadCaptureForm() {
           )}
         />
         <Button type="submit" className="w-full h-12 sm:h-10 text-base sm:text-sm" disabled={isSubmitting}>
-          {isSubmitting ? "Sending..." : "Get in Touch"}
+          {isSubmitting ? "Sending..." : "Contact Flight Instructor"}
         </Button>
       </form>
     </Form>

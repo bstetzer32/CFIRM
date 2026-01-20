@@ -6,9 +6,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: "Learn to Fly - Flight Training Guide & Resources",
-  description: "Complete guide to learning to fly. Find information about pilot training costs, requirements, flight lessons, and how to get your pilot's license.",
-  keywords: ["learn to fly", "flight training guide", "pilot training", "how to become a pilot", "pilot license requirements", "flight lessons"],
+  title: "Flight School Resources - Learn to Fly with a Certified Flight Instructor",
+  description: "Complete flight school guide to learning to fly. Your CFI provides information about pilot training costs, flight school requirements, flight lessons, and how to get your pilot's license in Cincinnati.",
+  keywords: ["flight school", "certified flight instructor", "CFI", "learn to fly", "flight training guide", "pilot training", "how to become a pilot", "pilot license requirements", "flight lessons", "Cincinnati flight school"],
 };
 
 export default function ArticlesPage() {
@@ -33,20 +33,20 @@ export default function ArticlesPage() {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-            Flight Training Articles
+            Flight School Training Articles
           </h1>
           <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto">
-            Your comprehensive resource for{" "}
-            <Link href="/articles/how-to-get-a-pilots-license" className="text-foreground hover:text-primary transition-colors">learning to fly</Link>. Whether you&apos;re 
+            Your comprehensive flight school resource for{" "}
+            <Link href="/articles/how-to-get-a-pilots-license" className="text-foreground hover:text-primary transition-colors">learning to fly</Link> with a certified flight instructor. Whether you&apos;re 
             researching <Link href="/articles/private-pilot-license-requirements" className="text-foreground hover:text-primary transition-colors">private pilot requirements</Link>,{" "}
-            <Link href="/articles/flight-training-cost-breakdown" className="text-foreground hover:text-primary transition-colors">flight training costs</Link>, or preparing for your{" "}
-            <Link href="/articles/checkride-preparation-guide" className="text-foreground hover:text-primary transition-colors">checkride</Link>, you&apos;ll find expert guidance here.
+            <Link href="/articles/flight-training-cost-breakdown" className="text-foreground hover:text-primary transition-colors">flight training school costs</Link>, or preparing for your{" "}
+            <Link href="/articles/checkride-preparation-guide" className="text-foreground hover:text-primary transition-colors">checkride</Link>, you&apos;ll find expert CFI guidance here.
           </p>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
             From your <Link href="/articles/discovery-flight-guide" className="text-foreground hover:text-primary transition-colors">first discovery flight</Link> to{" "}
             <Link href="/articles/instrument-rating-guide" className="text-foreground hover:text-primary transition-colors">instrument rating training</Link> and{" "}
-            <Link href="/articles/commercial-pilot-license-guide" className="text-foreground hover:text-primary transition-colors">commercial pilot certification</Link>, these articles cover 
-            every step of your <Link href="/articles/aviation-career-paths" className="text-foreground hover:text-primary transition-colors">aviation journey</Link>. Learn about{" "}
+            <Link href="/articles/commercial-pilot-license-guide" className="text-foreground hover:text-primary transition-colors">commercial pilot certification</Link>, these flight school articles cover 
+            every step of your <Link href="/articles/aviation-career-paths" className="text-foreground hover:text-primary transition-colors">aviation journey</Link>. Learn from your certified flight instructor about{" "}
             <Link href="/articles/medical-certificate-requirements" className="text-foreground hover:text-primary transition-colors">medical certificates</Link>,{" "}
             <Link href="/articles/student-pilot-certificate" className="text-foreground hover:text-primary transition-colors">student pilot certificates</Link>,{" "}
             <Link href="/articles/solo-flight-guide" className="text-foreground hover:text-primary transition-colors">solo flight requirements</Link>, and{" "}
