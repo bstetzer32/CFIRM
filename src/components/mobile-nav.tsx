@@ -37,10 +37,10 @@ export function MobileNav() {
       {/* Mobile Menu Overlay */}
       {isOpen && (
         <div 
-          className="fixed inset-0 top-16 z-50 bg-background/95 backdrop-blur-md animate-in fade-in slide-in-from-top-2 duration-200"
+          className="fixed inset-0 top-16 z-50 bg-background backdrop-blur-none animate-in fade-in slide-in-from-top-2 duration-200"
           onClick={() => setIsOpen(false)}
         >
-          <nav className="container mx-auto px-4 py-6">
+          <nav className="container mx-auto px-4 py-6 bg-background">
             <div className="flex flex-col space-y-2">
               <Link
                 href="/"
