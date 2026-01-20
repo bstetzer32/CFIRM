@@ -121,5 +121,56 @@
   }
   body {
     @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* iPhone 12+ optimizations (390px width and up) */
+@media screen and (max-width: 430px) {
+  html {
+    font-size: 15px;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  /* Prevent horizontal scroll */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Safe area insets for notched iPhones */
+  .container {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+}
+
+/* iPhone safe areas for notch and home indicator */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+  
+  footer {
+    padding-bottom: max(1rem, env(safe-area-inset-bottom));
+  }
+}
+
+/* Smooth scrolling with reduced motion support */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  /* Better active states for touch */
+  button:active, 
+  a:active,
+  .group:active {
+    opacity: 0.85;
+    transform: scale(0.98);
   }
 }

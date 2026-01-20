@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getSiteConfig } from "@/lib/schema";
+import { MobileNav } from "@/components/mobile-nav";
 
 export function Header() {
   const config = getSiteConfig();
@@ -22,9 +23,11 @@ export function Header() {
               <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z" />
             </svg>
           </div>
-          <span className="text-xl font-bold group-hover:text-primary transition-colors duration-300">{config.name}</span>
+          <span className="text-lg sm:text-xl font-bold group-hover:text-primary transition-colors duration-300 truncate max-w-[180px] sm:max-w-none">{config.name}</span>
         </Link>
-        <nav className="flex items-center space-x-1">
+        
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center space-x-1">
           <Link
             href="/"
             className="text-sm font-medium px-4 py-2 rounded-lg transition-all duration-300 hover:text-primary hover:bg-primary/10"
@@ -44,6 +47,9 @@ export function Header() {
             Contact
           </Link>
         </nav>
+
+        {/* Mobile Navigation */}
+        <MobileNav />
       </div>
     </header>
   );

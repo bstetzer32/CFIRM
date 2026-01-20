@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       {/* Hero Section */}
-      <section className="relative overflow-hidden py-20 md:py-32">
+      <section className="relative overflow-hidden py-12 sm:py-16 md:py-32">
         {/* Hero Background Image */}
         <div className="absolute inset-0 -z-10">
           <Image
@@ -21,41 +21,42 @@ export default function Home() {
             fill
             className="object-cover"
             priority
+            sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background via-background/95 to-background/70" />
+          <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-background via-background/95 to-background/70" />
         </div>
         <div className="container mx-auto px-4">
-          <div className="grid gap-12 md:grid-cols-2 md:items-center">
-            <div className="space-y-6">
-              <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
+          <div className="grid gap-8 md:gap-12 md:grid-cols-2 md:items-center">
+            <div className="space-y-4 sm:space-y-6">
+              <h1 className="text-3xl sm:text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
                 Professional
                 <span className="text-primary"> Flight Training</span>
                 <br />In Cincinnati, OH
               </h1>
-              <p className="text-lg text-muted-foreground md:text-xl">
+              <p className="text-base sm:text-lg text-muted-foreground md:text-xl leading-relaxed">
                 Ready to <Link href="/articles/how-to-get-a-pilots-license" className="text-foreground hover:text-primary transition-colors">earn your pilot&apos;s license</Link>? I&apos;m Connor McNulty, a <Link href="/articles/choosing-a-flight-instructor" className="text-foreground hover:text-primary transition-colors">Certified Flight Instructor</Link>{" "}
                 offering personalized <Link href="/articles/cincinnati-flight-training-guide" className="text-foreground hover:text-primary transition-colors">flight training in Cincinnati</Link>. From your{" "}
                 <Link href="/articles/discovery-flight-guide" className="text-foreground hover:text-primary transition-colors">first discovery flight</Link> to <Link href="/articles/instrument-rating-guide" className="text-foreground hover:text-primary transition-colors">advanced ratings</Link>, I&apos;ll help you achieve your aviation goals.
               </p>
-              <div className="flex flex-col gap-4 sm:flex-row">
-                <Button size="lg" asChild>
+              <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 pt-2">
+                <Button size="lg" asChild className="w-full sm:w-auto text-base py-6 sm:py-4">
                   <Link href="#contact">Schedule a Lesson</Link>
                 </Button>
-                <Button size="lg" variant="outline" asChild>
+                <Button size="lg" variant="outline" asChild className="w-full sm:w-auto text-base py-6 sm:py-4">
                   <Link href="/articles">Flight Training Guide</Link>
                 </Button>
               </div>
             </div>
-            <div className="relative mx-auto max-w-md">
+            <div className="relative mx-auto w-full max-w-md">
               <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-tr from-primary/30 to-accent/20 blur-3xl animate-pulse" />
               <Card className="border-primary/20 shadow-xl shadow-primary/10 backdrop-blur-sm bg-card/95">
-                <CardHeader className="text-center">
-                  <CardTitle className="text-2xl">Start Your Flight Training</CardTitle>
-                  <CardDescription className="text-base">
+                <CardHeader className="text-center px-4 sm:px-6">
+                  <CardTitle className="text-xl sm:text-2xl">Start Your Flight Training</CardTitle>
+                  <CardDescription className="text-sm sm:text-base">
                     Contact me to discuss your goals and schedule your first lesson.
                   </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="px-4 sm:px-6">
                   <LeadCaptureForm />
                 </CardContent>
               </Card>
@@ -65,19 +66,19 @@ export default function Home() {
       </section>
 
       {/* Training Offerings Section */}
-      <section className="py-20">
+      <section className="py-12 sm:py-16 md:py-20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold tracking-tight md:text-4xl">
+          <div className="text-center mb-8 sm:mb-12">
+            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight md:text-4xl">
               Flight Training Services
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg text-muted-foreground">
               Comprehensive training programs tailored to your aviation goals.
             </p>
           </div>
-          <div className="grid gap-8 md:grid-cols-3">
-            <Card className="overflow-hidden group cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 border-border/50 hover:border-primary/30">
-              <div className="relative h-48 overflow-hidden">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-3">
+            <Card className="overflow-hidden group cursor-pointer transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 active:scale-[0.98] md:hover:-translate-y-1 border-border/50 hover:border-primary/30">
+              <div className="relative h-40 sm:h-48 overflow-hidden">
                 <Image
                   src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?w=600&q=80"
                   alt="White single engine propeller aircraft on runway"

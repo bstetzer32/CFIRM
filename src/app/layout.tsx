@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import { Header } from "@/components/header";
@@ -26,6 +26,19 @@ const geistMono = Geist_Mono({
 });
 
 const siteConfig = getSiteConfig();
+
+// Viewport configuration for iPhone 12+ optimization
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  userScalable: true,
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#0284c7" },
+    { media: "(prefers-color-scheme: dark)", color: "#0ea5e9" },
+  ],
+};
 
 export const metadata: Metadata = {
   title: {
@@ -80,6 +93,15 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: siteConfig.url,
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: siteConfig.name,
+  },
+  formatDetection: {
+    telephone: true,
+    email: true,
   },
 };
 

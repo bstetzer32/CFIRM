@@ -73,9 +73,14 @@ export function LeadCaptureForm() {
           name="name"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Name</FormLabel>
+              <FormLabel className="text-sm sm:text-base">Name</FormLabel>
               <FormControl>
-                <Input placeholder="Your name" {...field} />
+                <Input 
+                  placeholder="Your name" 
+                  className="h-12 sm:h-10 text-base sm:text-sm"
+                  autoComplete="name"
+                  {...field} 
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -86,9 +91,16 @@ export function LeadCaptureForm() {
           name="email"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Email</FormLabel>
+              <FormLabel className="text-sm sm:text-base">Email</FormLabel>
               <FormControl>
-                <Input placeholder="your@email.com" type="email" {...field} />
+                <Input 
+                  placeholder="your@email.com" 
+                  type="email"
+                  className="h-12 sm:h-10 text-base sm:text-sm"
+                  autoComplete="email"
+                  inputMode="email"
+                  {...field} 
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -99,9 +111,16 @@ export function LeadCaptureForm() {
           name="phone"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Phone (Optional)</FormLabel>
+              <FormLabel className="text-sm sm:text-base">Phone (Optional)</FormLabel>
               <FormControl>
-                <Input placeholder="(555) 123-4567" type="tel" {...field} />
+                <Input 
+                  placeholder="(555) 123-4567" 
+                  type="tel"
+                  className="h-12 sm:h-10 text-base sm:text-sm"
+                  autoComplete="tel"
+                  inputMode="tel"
+                  {...field} 
+                />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -112,10 +131,10 @@ export function LeadCaptureForm() {
           name="trainingGoal"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Training Goal</FormLabel>
+              <FormLabel className="text-sm sm:text-base">Training Goal</FormLabel>
               <FormControl>
                 <select
-                  className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  className="flex h-12 sm:h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-base sm:text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   {...field}
                 >
                   <option value="">Select your goal...</option>
@@ -138,11 +157,11 @@ export function LeadCaptureForm() {
           name="message"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Message (Optional)</FormLabel>
+              <FormLabel className="text-sm sm:text-base">Message (Optional)</FormLabel>
               <FormControl>
                 <Textarea
                   placeholder="Any flying experience? Questions about training?"
-                  className="resize-none"
+                  className="resize-none min-h-[100px] text-base sm:text-sm"
                   {...field}
                 />
               </FormControl>
@@ -150,7 +169,7 @@ export function LeadCaptureForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full" disabled={isSubmitting}>
+        <Button type="submit" className="w-full h-12 sm:h-10 text-base sm:text-sm" disabled={isSubmitting}>
           {isSubmitting ? "Sending..." : "Get in Touch"}
         </Button>
       </form>
